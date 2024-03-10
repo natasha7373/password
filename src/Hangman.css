@@ -1,0 +1,123 @@
+.hangman-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px; 
+    box-sizing: border-box;
+    background-color: #E7E8EA;
+    width: 100%; 
+    max-width: 390px; 
+    margin: auto; 
+  }
+  
+  .game-info {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #425D86;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .score, .tries-left {
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    color: #425D86;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .definition {
+    text-align: center;
+    
+    margin-bottom: 60px;
+    color: #425D86;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .word-to-guess {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+    color: #425D86;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .keyboard {
+    max-width: calc(100% - 40px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    margin: 0 -4px; 
+  }
+  
+  .key-button {
+    background-color: #425D86;
+    color: #E7E8EA;
+    border: none;
+    border-radius: 5px;
+    margin: 3px; 
+    padding: 6px 10px; 
+    min-width: 15px; 
+    font-size: 1rem;
+    flex: 1; 
+    max-width: 40px; 
+  }
+
+  .key-button:disabled {
+    background-color: #cccccc; 
+    color: #666666; 
+    cursor: not-allowed; 
+}
+
+.key-button.guessed {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 130px;
+    
+    background: transparent;
+    border: none;
+    color: #425D86;
+    font-size: 1.2 rem;
+    cursor: pointer;
+  }
+  .retry-modal {
+    margin-top: 10px;
+    bottom: 60px;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    color: #425D86;
+    font-size: 1.2 rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 375px) {
+    .key-button {
+      padding: 8px 10px; 
+      margin: 5px; 
+      flex: none; 
+      width: 32px; 
+    }
+
+  }
+  

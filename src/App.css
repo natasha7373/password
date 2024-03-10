@@ -1,0 +1,12 @@
+.iphone-container {
+    width: 390px; 
+    height: 844px; 
+    margin: auto; 
+    border-radius: 36px; 
+    overflow: hidden; 
+    background-color: #E7E8EA; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+  }
+  
